@@ -1,28 +1,28 @@
 const products = [
     {name: "Gaming Console" ,
-        category: "Electronics" ,
+        category: "electronics" ,
         price: 299.99 ,
         inventory: 50 
     } ,
     {
         name: "Polo Shirt" ,
-        category: "Apparel" ,
+        category: "apparel" ,
         price: 29.99 ,
         inventory: 100
     } ,
     {
         name: "Milk" ,
-        category: "Groceries" ,
+        category: "groceries" ,
         price: 3.99 ,
         inventory: 200
     } ,
     { name: "Mop" ,
-        category: "Household" ,
+        category: "household" ,
         price: 19.99 ,
         inventory: 50
     } ,
     { name: "Body Moisturizer" ,
-        category: "Other" ,
+        category: "other" ,
         price: 19.99 ,
         inventory: 55
     }
@@ -30,14 +30,14 @@ const products = [
 
 for (const product of products) {
     switch (product.category) {
-        case "Electronics":
+        case "electronics":
 product.price *= 0.80; // 20% discount
             break;
-        case "Apparel":
+        case "apparel":
             product.price *= 0.85; // 15% discount
             break;
-        case "Groceries":
-            case "Household":
+        case "groceries":
+            case "household":
             product.price *= 0.90; // 10% discount
             break;
 
@@ -46,13 +46,13 @@ product.price *= 0.80; // 20% discount
                 break;
     }
 }
-let customerType = "Student";
+let customerType = "student";
 let customerDiscount = 0;
 
-if (customerType === "Student") {
+if (customerType === "student") {
     customerDiscount = 0.05; // 5% discount for students
 }
-else if (customerType === "Senior") {
+else if (customerType === "senior") {
     customerDiscount = 0.07; // 7% discount for seniors
 }
 else {
